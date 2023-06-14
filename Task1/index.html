@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+          <div class="calculator">
+            <div class="wrapper">
+                <div class="header">
+                    <!-- <h3>Calculator</h3> -->
+                    <div class="theme-toggle">
+                        <span></span>
+                        
+                    </div>
+                    <div class="historyShower" onclick="show_hide_btns_results()">
+                    <h4 class="showHistory">History</h4>
+                      <span class="closeBtn">x</span>
+                    </div>
+                    <svg class="deleteHistory" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M259-104q-30.75 0-51.875-21.125T186-177v-575h-41v-73h202v-34h267v34h202v73h-41v575q0 28.725-22.138 50.863Q730.725-104 702-104H259Zm443-648H259v575h443v-575ZM357-264h73v-403h-73v403Zm175 0h73v-403h-73v403ZM259-752v575-575Z"/></svg>
+                    <div id="history" class="hist">
+                      <div class="result-container-foreach active">
+                          <p>3 * 3</p>
+                          <h1>9</h1>
+                      </div>
+                    </div>
+                </div>
+                <div class="display">
+                <div class="result-1">0</div>
+                <div class="result-2"></div>
+                <div class="side-result"></div>
+                </div>
+            </div>
+            <div class="calc_btns">
+              <div class="button recent-value light">CE</div>
+              <div class="button operation light">%</div>
+              <div class="button operation light">/</div>
+              <div class="button clear_all light lwh">AC</div>
+              <div class="button number">7</div>
+              <div class="button number">8</div>
+              <div class="button number">9</div>
+              <div class="button operation light">x</div>
+              <div class="button number">4</div>
+              <div class="button number">5</div>
+              <div class="button number">6</div>
+              <div class="button operation light">-</div>
+              <div class="button number">1</div>
+              <div class="button number">2</div>
+              <div class="button number">3</div>
+              <div class="button operation   light">+</div>
+              <div class="button zero_btn number">0</div>
+              <div class="button number dot light">.</div>
+              <div class="button equal red-color light lw">=</div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </section>
+      
+      <script src="app.js"></script>    
+</body>
+</html>
